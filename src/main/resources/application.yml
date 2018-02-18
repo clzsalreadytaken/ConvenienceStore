@@ -1,0 +1,31 @@
+spring:
+ datasource:
+  driver-class-name: com.mysql.jdbc.Driver
+  url: jdbc:mysql://39.106.117.235:3306/bld?useUnicode=true&characterEncoding=utf-8
+  username: root
+  password: root
+  initialSize: 5
+  maxActive: 100
+  maxIdle: 45
+  minIdle: 50
+  maxWait: 100
+  removeAbandonedTimeout: 180
+  removeAbandoned: true
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  validationQuery: select 1
+  timeBetweenEvictionRunsMillis: 100
+  numTestsPerEvictionRun: 6000
+  defaultAutoCommit: false
+ jpa:
+  database: mysql
+ mvc:
+  view:
+   prefix: /
+   suffix: .jsp
+server:
+ port: 8080
+mybatis:
+ type-aliases-package: cn.pojo
+ mapper-locations: classpath:cn/dao/*.xml

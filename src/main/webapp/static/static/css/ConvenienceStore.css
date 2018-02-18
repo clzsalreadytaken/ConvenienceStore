@@ -1,0 +1,15 @@
+#produte_list li{
+	margin:0px 50px 0px 0px;
+}
+#produte_list_color li{
+	margin:0px 50px 0px 0px;
+}
+.odd{
+	background-color: red;
+}
+.even{
+	background-color: blue;
+}
+#color_black{
+	background-color: red;
+}
