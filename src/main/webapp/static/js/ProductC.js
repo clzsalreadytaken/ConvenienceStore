@@ -1,0 +1,9 @@
+$(function(){
+	//alert("1");
+	$.getJSON(
+			"getalllist",
+			function(result){
+				alert(result);
+			}
+	)
+})
