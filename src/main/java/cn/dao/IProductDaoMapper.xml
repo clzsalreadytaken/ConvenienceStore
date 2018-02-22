@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+   PUBLIC  "-//mybits.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.IProduct">
+    <insert id="addOne" parameterType="cn.pojo.Product">
+      insert into store_product values(0,#{0},#{1},#{2},0,#{3})
+   </insert>
+   <select id="getAll" resultType="cn.pojo.Product">
+      select * from store_product
+   </select>
+    <select id="getList" parameterType="int" resultType="cn.pojo.Product">
+       select * from store_product LIMIT #{0},10
+   </select>
+    <select id="pageTotalCount" resultType="int">
+        select count(*) from store_product 
+   </select>
+   <select id="login" resultType="int">
+      select count(*) from store_user where store_uname = #{0} AND store_pwd = #{1}
+   </select>
+</mapper>
