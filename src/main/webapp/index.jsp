@@ -23,6 +23,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <link rel="stylesheet" href="static/css/index.css" type="text/css"></link>
   <script type="text/javascript" src="static/js/bootstrap.js"></script>
   <script type="text/javascript" src="static/js/jquery.min.js"></script>
+  <script type="text/javascript" src="static/js/index.js"></script>
   </head>
   	
   <body class="bodyimg" style="clear:right;">
@@ -32,7 +33,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 	</div> -->
 	<!-- form表单 -->
-	<form class="form-horizontal" role="form" style="margin:240px 0px 0px 550px;float:left;background-color: white;">
+	<form class="form-horizontal" role="form" style="margin:240px 0px 0px 500px;float:left;background-color: white;">
 		<p style="height: 10px;"></p>
 		 <div class="form-group" >
 		    <label for="firstname" class="col-sm-4 control-label">用户名</label>
@@ -46,14 +47,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		      <input type="text" class="form-control" id="firstpwd" placeholder="请输入名字">
 		    </div>
 		  </div><br>
-		  <div class="form-group">
+		<!--   <div class="form-group">
 			    <label for="firstorder" class="col-sm-4 control-label">口令</label>
 			    <div class="col-sm-7">
 			      <input type="text" class="form-control" id="firstorder" placeholder="请输入口令">
 			    </div>
-			 </div><br>
+			 </div><br> -->
 		  
-		   <div class="form-group">
+		   <!-- <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <div class="checkbox">
         <label>
@@ -61,10 +62,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </label>
       </div>
     </div>
-  </div><br>
+  </div><br> -->
   <div class="form-group">
     <div class="col-sm-offset-4 col-sm-10">
-      <button type="submit" class="btn btn-default">登录</button>
+      <button type="button" id="login" class="btn btn-default">登录</button>
     </div>
   </div>
 	</form>
