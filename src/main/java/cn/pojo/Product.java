@@ -12,13 +12,13 @@ package cn.pojo;
 public class Product {
 	private int product_number;
 	private String product_name;
-	private int product_purchase;
-	private int product_sell;
+	private float product_purchase;
+	private float product_sell;
 	private int product_inventory;
 	private String product_unit;
 	public int getProduct_number() {
 		return product_number;
-	}
+	} 
 	public void setProduct_number(int product_number) {
 		this.product_number = product_number;
 	}
@@ -28,14 +28,18 @@ public class Product {
 	public void setProduct_name(String product_name) {
 		this.product_name = product_name;
 	}
-	public int getProduct_purchase() {
+	
+	public float getProduct_purchase() {
 		return product_purchase;
 	}
-	public void setProduct_purchase(int product_purchase) {
+	public void setProduct_purchase(float product_purchase) {
 		this.product_purchase = product_purchase;
 	}
-	public int getProduct_sell() {
+	public float getProduct_sell() {
 		return product_sell;
+	}
+	public void setProduct_sell(float product_sell) {
+		this.product_sell = product_sell;
 	}
 	public void setProduct_sell(int product_sell) {
 		this.product_sell = product_sell;
